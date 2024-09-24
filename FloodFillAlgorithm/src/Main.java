@@ -11,10 +11,10 @@ public class Main {
 		
 		BufferedImage image;
 		try {
-			image = ImageIO.read(new File("FloodFillAlgorithm/FloodFillAlgorithm/src/tde.png"));
+			image = ImageIO.read(new File("FloodFillAlgorithm/src/tde.png"));
 			FloodFill flood = new FloodFill(image);
 			
-			Color newColor = new Color(255, 0, 255);
+			Color newColor = new Color(205, 31, 205);
 			
 			flood.algorithm(6, 2, newColor);
 			
