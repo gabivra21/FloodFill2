@@ -4,17 +4,16 @@ import java.util.LinkedList;
 
 
 public class Queue<T> {
-	private DoublyLinkedList<T> queue;
-	
-	public Queue() {
+    private DoublyLinkedList<T> queue;
 
+    public Queue() {
         queue = new DoublyLinkedList<>();
     }
 
     public void enqueue(T value) {
-    	if(value == null) {
-    		return;
-    	}
+        if(value == null) {
+            return;
+        }
         queue.add(value);
     }
 
@@ -28,7 +27,7 @@ public class Queue<T> {
     public boolean isEmpty() {
         return queue.size() == 0;
     }
-    
+
     public void printQueue() {
 
         queue.printList();
